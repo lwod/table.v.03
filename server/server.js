@@ -9,9 +9,9 @@ const http = require('http')
 const server = http.createServer(app)
 
 app.use(cors())
-app.use(express.static(path.join(__dirname, 'client','build')))
+app.use(express.static(path.join(__dirname, '..', 'client','build')))
 app.get('/', async (req,res)=>{
-	res.sendFile(`${__dirname}/client/build/index.html`)
+	res.sendFile(`${__dirname}/../client/build/index.html`)
 })
 
 
