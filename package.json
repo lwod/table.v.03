@@ -1,0 +1,12 @@
+{
+  "name": "table.v.03",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm i && node server",
+    "dev": "node server"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socketio": "^1.0.0"
+  }
+}
