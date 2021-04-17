@@ -9,7 +9,7 @@ const App = () => {
     
     return (
         <div className={'div'}>
-            <div onClick={()=>{socket.send(JSON.stringify({message:'some str wss'}))}}>some str: {}</div>
+            <button onClick={()=>{socket.send(JSON.stringify({message:'some str wss'}))}}>Send data</button>
         </div>
     )
 }

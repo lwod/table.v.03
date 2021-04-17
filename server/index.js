@@ -19,6 +19,7 @@ const WebSocket = require('ws')
 const wss = new WebSocket.Server({server})
 
 wss.on('connection', (ws)=>{
+	console.log('socket connected')
 	ws.on('message', msg=>{
 		console.log(JSON.parse(msg))
 	})
