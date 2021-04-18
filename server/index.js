@@ -21,11 +21,9 @@ app.get('/', async (req,res)=>{
 io.on('connection', socket => {
 	console.log('connection')
 	
-	socket.on('message', ({name, message}) => {
-		console.log(`${name}, ${message}`)
-		name = name + ' : str'
-		message = message + ' : str'
-		io.emit('message', { name, message })
+	socket.on('message', (msg) => {
+		console.log(msg)
+		io.emit('setMarker', msg)
 	})
 })
 
