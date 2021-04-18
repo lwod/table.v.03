@@ -1,2 +1,0 @@
-(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[0],{10:function(e,n,t){"use strict";t.r(n);var s=t(1),c=t.n(s),i=t(3),o=t.n(i),r=(t(8),t(0)),d=new WebSocket("wss://lwod.herokuapp.com/"),a=function(){return Object(r.jsx)("div",{className:"div",children:Object(r.jsx)("button",{onClick:function(){d.send(JSON.stringify({message:"some str wss"}))},children:"Send data"})})};o.a.render(Object(r.jsx)(c.a.StrictMode,{children:Object(r.jsx)(a,{})}),document.getElementById("root"))},8:function(e,n,t){}},[[10,1,2]]]);
-//# sourceMappingURL=main.7fc9f8ae.chunk.js.map

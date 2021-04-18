@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-
+const str = 'some str'
 
 ReactDOM.render(
   <React.StrictMode>
